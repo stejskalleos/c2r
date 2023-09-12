@@ -19,6 +19,12 @@ Install rpm
 dnf install convert2rhel-init
 ```
 
+# How to develop
+For inspiration see:
+```
+https://gist.github.com/fernandoaleman/1377211
+```
+
 # How to sync from local to repo
 ```
 rsync -avzhe ssh /path/to/c2r/repo/* account@stejskalleos.cz:/var/www/c2
