@@ -1,6 +1,6 @@
 Name:     c2r-sat-apply
 Summary:  Convert2RHEL Satellite Appliance
-Version:  0.0.1
+Version:  0.0.2
 Release:  1.el8
 License:  GPL
 Group:    Unspecified
@@ -56,21 +56,10 @@ cp %{SOURCE2} %{buildroot}/tmp/convert2rhel
 /tmp/convert2rhel/01-prep.sh
 /tmp/convert2rhel/02-install.sh
 
-# mkdir -p /tmp/convert2rhel
-# cd /tmp/convert2rhel
-# wall "Installing Convert2RHEL Satellite Appliance"
-# cp convert2rhel-init.service /etc/systemd/system
-# chmod 644 /etc/systemd/system/convert2rhel-init.service
-# systemctl enable convert2rhel-init.service
-
-# Run after the rpm package is uninstalled.
-# %postun -p /bin/sh
-# rm -rf /tmp/convert2rhel/
-
-# %clean
-# echo NOOP
-
 %changelog
+
+* Tue Sep 12 2023 Stejskal Leos <lstejska@redhat.com>  0.0.2
+Bla bla bla progress
 
 * Tue Aug 15 2023 Stejskal Leos <lstejska@redhat.com>  0.0.1
 First package!
